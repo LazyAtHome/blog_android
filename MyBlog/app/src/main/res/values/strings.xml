@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyBlog</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- modified by Tiny.Lan -->
+    <string name="text_title_common">博客</string>
+    <string name="btn_title_left_common">返回</string>
+    <string name="btn_title_right_common">其他</string>
+
+    <string name="btn_navigation_home">首页</string>
+    <string name="btn_navigation_publish">发博客</string>
+    <string name="btn_navigation_me">我自己</string>
+</resources>
