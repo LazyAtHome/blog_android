@@ -1,6 +1,7 @@
 package com.example.administrator.myblog;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -106,9 +107,31 @@ public class HomeFragment extends Fragment {
     }
 
     private void initView(ViewGroup root) {
-        Button btnLeft = (Button)root.findViewById(R.id.btn_title_left);
-        Button btnRight = (Button)root.findViewById(R.id.btn_title_right);
-        TextView textTitle = (TextView)root.findViewById(R.id.text_title);
+        Button btnLeft = (Button) root.findViewById(R.id.btn_title_left);
+        Button btnRight = (Button) root.findViewById(R.id.btn_title_right);
+        TextView textTitle = (TextView) root.findViewById(R.id.text_title);
+        btnLeft.setVisibility(View.VISIBLE);
+        btnLeft.setBackgroundResource(R.drawable.publish);
+        btnLeft.setText("");
+        btnLeft.setOnClickListener(clickToPublish);
+        btnRight.setVisibility(View.VISIBLE);
+        btnRight.setText(R.string.text_my);
+        btnRight.setTextColor(getResources().getColor(R.color.orange));
+        btnRight.setOnClickListener(clickToMy);
         textTitle.setText(R.string.btn_navigation_home);
     }
+
+    private View.OnClickListener clickToPublish = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            startActivity(new Intent(getActivity(), EditActivity.class));
+        }
+    };
+
+    private View.OnClickListener clickToMy = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            startActivity(new Intent(getActivity(), MyActivity.class));
+        }
+    };
 }

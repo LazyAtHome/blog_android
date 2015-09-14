@@ -21,8 +21,8 @@
 
         <ImageView
             android:id="@+id/img_me"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/head_portrait_width"
+            android:layout_height="@dimen/head_portrait_height"
             android:src="@drawable/head_portrait" />
 
         <LinearLayout

@@ -19,4 +19,14 @@
     <string name="text_logout">退出当前账号</string>
     <string name="text_publish">发布新的博客</string>
     <string name="hint_edit_publish">请在此处编辑您的博客</string>
+    <string name="text_publish_short">发博客</string>
+    <string name="text_my">我的</string>
+    <string name="text_my_blog">我的博客</string>
+    <string name="text_login">登录</string>
+
+    <string name="text_cancel">取消</string>
+    <string name="edit_publish">发布博客</string>
+    <string name="edit_publish_short">发布</string>
+
+    <string name="edt_none">博客内容不能为空</string>
 </resources>

@@ -1,6 +1,7 @@
 package com.example.administrator.myblog;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -126,14 +127,14 @@ public class MeFragment extends Fragment {
     private View.OnClickListener clickMyInfo = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            startActivity(new Intent(getActivity(), MyActivity.class));
         }
     };
 
     private View.OnClickListener clickLogout = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+startActivity(new Intent(getActivity(),LoginActivity.class));
         }
     };
 

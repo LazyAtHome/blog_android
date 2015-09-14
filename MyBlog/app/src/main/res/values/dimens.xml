@@ -21,8 +21,8 @@
     <dimen name="common_padding">10dp</dimen>
     <dimen name="long_padding">20dp</dimen>
 
-    <dimen name="head_portrait_width">50dp</dimen>
-    <dimen name="head_portrait_height">50dp</dimen>
+    <dimen name="head_portrait_width">48dp</dimen>
+    <dimen name="head_portrait_height">48dp</dimen>
 
     <dimen name="edit_frame_height">300dp</dimen>
 </resources>
