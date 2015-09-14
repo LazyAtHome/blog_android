@@ -5,13 +5,15 @@
     <color name="blue">#00abde</color>
     <color name="red">#ff6766</color>
     <color name="red_button">#ff7878</color>
+
     <color name="orange">#ff8202</color>
 
     <color name="white">#ffffff</color>
     <color name="bg_gray">#f0f0f0</color>
     <color name="bg_dark_gray">#a8a8a8</color>
     <color name="gray_text_common">#a4a4a4</color>
-    <color name="common_text_black">#222222</color>
+    <color name="gray_text_dark">#a0a0a0</color>
+    <color name="common_text_black">#555555</color>
     <color name="transparent_bg">#00000000</color>
 
     <color name="gray_line">#a8a8a8</color>

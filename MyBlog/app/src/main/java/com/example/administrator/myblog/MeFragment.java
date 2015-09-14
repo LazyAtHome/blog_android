@@ -9,12 +9,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 /**
  * Created by Administrator on 2015/9/11.
  */
 public class MeFragment extends Fragment {
+    LinearLayout layoutMyInfo;
+    LinearLayout layoutLogout;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -107,9 +110,32 @@ public class MeFragment extends Fragment {
     }
 
     private void initView(ViewGroup root) {
-        Button btnLeft = (Button)root.findViewById(R.id.btn_title_left);
-        Button btnRight = (Button)root.findViewById(R.id.btn_title_right);
-        TextView textTitle = (TextView)root.findViewById(R.id.text_title);
+        Button btnLeft = (Button) root.findViewById(R.id.btn_title_left);
+        Button btnRight = (Button) root.findViewById(R.id.btn_title_right);
+        TextView textTitle = (TextView) root.findViewById(R.id.text_title);
+        btnLeft.setVisibility(View.GONE);
+        btnRight.setVisibility(View.GONE);
         textTitle.setText(R.string.btn_navigation_me);
+
+        layoutMyInfo = (LinearLayout) root.findViewById(R.id.layout_me_information);
+        layoutMyInfo.setOnClickListener(clickMyInfo);
+        layoutLogout = (LinearLayout) root.findViewById(R.id.layout_me_logout);
+        layoutLogout.setOnClickListener(clickLogout);
     }
+
+    private View.OnClickListener clickMyInfo = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+        }
+    };
+
+    private View.OnClickListener clickLogout = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+        }
+    };
+
+
 }

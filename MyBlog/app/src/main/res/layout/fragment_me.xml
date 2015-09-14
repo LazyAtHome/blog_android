@@ -2,8 +2,77 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@color/bg_gray"
     android:orientation="vertical">
 
-    <include layout="@layout/include_title_bar"/>
+    <include layout="@layout/include_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/layout_me_information"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@drawable/gray_frame_just_bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/common_padding"
+        android:paddingLeft="@dimen/long_padding"
+        android:paddingRight="@dimen/long_padding"
+        android:paddingTop="@dimen/common_padding">
+
+        <ImageView
+            android:id="@+id/img_me"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/head_portrait" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_me_name"
+                style="@style/black_text_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_me_name_common" />
+
+            <TextView
+                android:id="@+id/text_me_id"
+                style="@style/black_text_common"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin"
+                android:text="@string/text_me_id_common" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/enter" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_me_logout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/long_margin"
+        android:background="@drawable/gray_frame_just_bottom"
+        android:gravity="center"
+        android:paddingBottom="@dimen/common_padding"
+        android:paddingTop="@dimen/common_padding">
+
+        <TextView
+            style="@style/orange_text_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_logout" />
+
+    </LinearLayout>
 
 </LinearLayout>

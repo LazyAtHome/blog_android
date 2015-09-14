@@ -1,6 +1,7 @@
 package com.example.administrator.myblog;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,12 +9,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
  * Created by Administrator on 2015/9/11.
  */
 public class PublishFragment extends Fragment {
+    private RelativeLayout layoutPublish = null;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -106,9 +110,20 @@ public class PublishFragment extends Fragment {
     }
 
     private void initView(ViewGroup root) {
-        Button btnLeft = (Button)root.findViewById(R.id.btn_title_left);
-        Button btnRight = (Button)root.findViewById(R.id.btn_title_right);
-        TextView textTitle = (TextView)root.findViewById(R.id.text_title);
+        Button btnLeft = (Button) root.findViewById(R.id.btn_title_left);
+        Button btnRight = (Button) root.findViewById(R.id.btn_title_right);
+        TextView textTitle = (TextView) root.findViewById(R.id.text_title);
         textTitle.setText(R.string.btn_navigation_publish);
+        btnLeft.setVisibility(View.GONE);
+        btnRight.setVisibility(View.GONE);
+        layoutPublish = (RelativeLayout) root.findViewById(R.id.layout_publish);
+        layoutPublish.setOnClickListener(clickLogout);
     }
+
+    private View.OnClickListener clickLogout = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            startActivity(new Intent(getActivity(), EditActivity.class));
+        }
+    };
 }
