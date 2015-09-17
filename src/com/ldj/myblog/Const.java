@@ -4,13 +4,16 @@ public class Const {
 
 	public static class Message {
 		public static final int MSG_NETWORK_AVAILABLE = 1;
+		public static final int MSG_LOGIN_SUCC = 2;
+		public static final int MSG_LOGIN_FAIL = 3;
+		
 	}
 
 	public static class Request {
 		public static final int REQUEST_SUCC = 200;
 		public static final int REQUEST_FAIL = 201;
 		public static final String SERVER = "http://jason.tunnel.mobi/blogserver";
-		public static final String login = SERVER + "/user/login";
+		public static final String login = SERVER + "/users/login";
 
 	}
 

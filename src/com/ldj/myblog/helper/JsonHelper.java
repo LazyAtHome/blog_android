@@ -28,7 +28,6 @@ public class JsonHelper {
 	}
 
 	/**
-	 * �������б�ת��json����
 	 * 
 	 * @param list
 	 * @return
@@ -50,7 +49,6 @@ public class JsonHelper {
 	}
 
 	/**
-	 * ��json�ַ�ת�ɶ���
 	 * 
 	 * @param json
 	 * @param obj

@@ -22,6 +22,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.ldj.myblog.Const;
 import com.ldj.myblog.R;
+import com.ldj.myblog.helper.JsonHelper;
 import com.ldj.myblog.resp.BaseResp;
 import com.ldj.myblog.util.Map2KV;
 
@@ -136,10 +137,13 @@ public class MyVolley implements Response.ErrorListener, Listener<JSONObject> {
 		Message msg = handler.obtainMessage(requestSucc);
 		if (code == BaseResp.OK) {
 			msg.arg1 = Const.Request.REQUEST_SUCC;
+			msg.obj = response.toString();
 		} else {
 			msg.arg1 = Const.Request.REQUEST_FAIL;
+			BaseResp errorResp =(BaseResp) JsonHelper.jsonToObject(response.toString(), BaseResp.class);
+			msg.obj = errorResp.getResponseMsg();
 		}
-		msg.obj = response.toString();
+		
 		handler.sendMessage(msg);
 
 	}
