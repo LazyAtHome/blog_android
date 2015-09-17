@@ -32,10 +32,11 @@ public class MyVolley implements Response.ErrorListener, Listener<JSONObject> {
 	Handler handler;
 	int requestSucc = -1;
 	int requestFail = -1;
-//	LoadingDialog dialog;
+
+	// LoadingDialog dialog;
 
 	public MyVolley(Context context, int requestSucc, int requestFail) {
-		this.context  = context;
+		this.context = context;
 		myQueue = Volley.newRequestQueue(context);
 		this.requestSucc = requestSucc;
 		this.requestFail = requestFail;
@@ -64,19 +65,20 @@ public class MyVolley implements Response.ErrorListener, Listener<JSONObject> {
 
 	}
 
-//	public void requestGet(String url, LoadingDialog dialog, Handler handler) {
-//		this.dialog = dialog;
-//		dialog.show();
-//		requestGet(url, handler);
-//
-//	}
+	// public void requestGet(String url, LoadingDialog dialog, Handler handler)
+	// {
+	// this.dialog = dialog;
+	// dialog.show();
+	// requestGet(url, handler);
+	//
+	// }
 
 	public void requestPost(String url, Handler handler) {
 		this.handler = handler;
 		JSONObject jsonObject = new JSONObject(params);
 
 		JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
-				Method.POST, url, jsonObject, this, this) {
+				Method.POST, url + Map2KV.map(params), jsonObject, this, this) {
 
 			@Override
 			public Map<String, String> getHeaders() throws AuthFailureError {
@@ -105,19 +107,21 @@ public class MyVolley implements Response.ErrorListener, Listener<JSONObject> {
 
 	@Override
 	public void onResponse(JSONObject response) {
-//		if (dialog != null && dialog.isShowing()) {
-//			dialog.cancel();
-//		}
+		// if (dialog != null && dialog.isShowing()) {
+		// dialog.cancel();
+		// }
 
 		if (response == null) {
-			handler.obtainMessage(requestFail, context.getString(R.string.request_fail)).sendToTarget();
+			handler.obtainMessage(requestFail,
+					context.getString(R.string.request_fail)).sendToTarget();
 			return;
 		}
 		int code = -1;
 		try {
 			code = new JSONObject(response.toString()).getInt("responseCode");
 		} catch (JSONException e) {
-			handler.obtainMessage(requestFail, context.getString(R.string.request_fail)).sendToTarget();
+			handler.obtainMessage(requestFail,
+					context.getString(R.string.request_fail)).sendToTarget();
 			return;
 		}
 		Log.e("---------", "response:" + response);
@@ -134,9 +138,9 @@ public class MyVolley implements Response.ErrorListener, Listener<JSONObject> {
 
 	@Override
 	public void onErrorResponse(VolleyError error) {
-//		if (dialog != null && dialog.isShowing()) {
-//			dialog.cancel();
-//		}
+		// if (dialog != null && dialog.isShowing()) {
+		// dialog.cancel();
+		// }
 		Log.e("---------", "response:" + error);
 		handler.obtainMessage(requestFail, error.getMessage()).sendToTarget();
 
