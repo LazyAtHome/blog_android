@@ -18,7 +18,6 @@ public class LoginActivity extends FindInitActivity implements OnClickListener {
 	protected void onCreate(Bundle savedInstanceState) {
 		setContentView(R.layout.activity_login);
 		super.onCreate(savedInstanceState);
-
 	}
 
 	@Override

@@ -37,7 +37,7 @@ public class TestActivity extends Activity {
 	}
 
 	public void login(View view) {
-		loginVolley.addParams("userName", "yanpengtest");
+		loginVolley.addParams("userName", "yanpengtes");
 		loginVolley.addParams("password", "testtestyanpeng");
 		loginVolley.requestPost("http://jason.tunnel.mobi/blogserver/users/login", handler);
 	}

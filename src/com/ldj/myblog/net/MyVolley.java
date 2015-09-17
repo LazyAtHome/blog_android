@@ -12,6 +12,7 @@ import android.os.Message;
 import android.util.Log;
 
 import com.android.volley.AuthFailureError;
+import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request.Method;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -60,6 +61,9 @@ public class MyVolley implements Response.ErrorListener, Listener<JSONObject> {
 			}
 
 		};
+		jsonObjectRequest.setRetryPolicy(new DefaultRetryPolicy(10 * 1000,
+				DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+				DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
 
 		myQueue.add(jsonObjectRequest);
 
@@ -89,6 +93,10 @@ public class MyVolley implements Response.ErrorListener, Listener<JSONObject> {
 			}
 
 		};
+		jsonObjectRequest.setRetryPolicy(new DefaultRetryPolicy(10 * 1000,// 默认超时时间，应设置一个稍微大点儿的
+				DefaultRetryPolicy.DEFAULT_MAX_RETRIES,// 默认最大尝试次数
+				DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+
 		myQueue.add(jsonObjectRequest);
 	}
 
