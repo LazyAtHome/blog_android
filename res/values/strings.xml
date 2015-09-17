@@ -17,4 +17,7 @@
     <string name="lable_vistors">浏览</string>
     
     <string name="request_fail">请求失败</string>
+    <string name="login_username_hint">输入用户名</string>
+    <string name="login_password_hint">输入密码</string>
+    <string name="login">登录</string>
 </resources>

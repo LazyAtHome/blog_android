@@ -12,9 +12,14 @@
             android:layout_width="match_parent"
             android:layout_height="0dip"
             android:layout_weight="1" >
+            <Button android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="login"
+                     android:onClick="login"
+                />
         </LinearLayout>
 
-        <include layout="@layout/bottom_bar" />
+       
     </LinearLayout>
 
 </RelativeLayout>
