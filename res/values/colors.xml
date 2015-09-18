@@ -5,5 +5,7 @@
     <color name="highlight">#3188d5</color>
     <color name="emphasize">#5986d3</color>
     <color name="transparent">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="divider_color">#eecbcbcb</color>
 
 </resources>

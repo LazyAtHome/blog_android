@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/main_title"/>
+    
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@null"
+              android:padding="6dip"
+              android:singleLine="true"
+              android:hint="@string/title"
+        />
+    <include layout="@layout/divider1sp"/>
+    
+    <EditText android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@null"
+              android:padding="6dip"
+              android:gravity="top"
+              android:hint="@string/body"
+        />
+   
+    <include layout="@layout/divider1sp"/>
+
+</LinearLayout>

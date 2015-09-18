@@ -22,5 +22,10 @@
     <string name="login">登录</string>
     <string name="log_in">登录中</string>
     <string name="internet_abnormal">网络异常，请重新登录</string>
+    <string name="home_page">首页</string>
+    <string name="publish">发布</string>
+    <string name="publish_blog">发布博客</string>
+    <string name="title">标题</string>
+    <string name="body">正文...</string>
 
 </resources>
