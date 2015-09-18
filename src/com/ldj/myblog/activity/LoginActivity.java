@@ -84,7 +84,7 @@ public class LoginActivity extends FindInitActivity implements OnClickListener {
         switch (msg.what) {
             case Const.Message.MSG_LOGIN_SUCC:
                 LoginSuccResp succResp = (LoginSuccResp) JsonHelper.jsonToObject(msg.obj + "", LoginSuccResp.class);
-                Toast.makeText(getApplicationContext(), "id: " + succResp.getData().getId(), Toast.LENGTH_SHORT).show();
+               
                 if (msg.arg1 == Const.Request.REQUEST_SUCC) {
                     loginBtn.setText(R.string.log_in);
                     loginBtn.setEnabled(false);
