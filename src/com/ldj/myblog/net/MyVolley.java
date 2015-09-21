@@ -90,12 +90,37 @@ public class MyVolley implements Response.ErrorListener, Listener<JSONObject> {
 				Map<String, String> headers = new HashMap<String, String>();
 				headers.put("Accept", "application/json");
 				headers.put("Content-Type", "application/json; charset=utf-8");
+				
 				return headers;
 			}
 
 		};
 		jsonObjectRequest.setRetryPolicy(new DefaultRetryPolicy(10 * 1000,// 默认超时时间，应设置一个稍微大点儿的
-				DefaultRetryPolicy.DEFAULT_MAX_RETRIES,// 默认最大尝试次数
+				DefaultRetryPolicy.DEFAULT_MAX_RETRIES,// 默认最大尝试次数0
+				DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+
+		myQueue.add(jsonObjectRequest);
+	}
+	
+	public void requestPost(String url, Handler handler,final String accessToken) {
+		this.handler = handler;
+		JSONObject jsonObject = new JSONObject(params);
+
+		JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
+				Method.POST, url + Map2KV.map(params), jsonObject, this, this) {
+
+			@Override
+			public Map<String, String> getHeaders() throws AuthFailureError {
+				Map<String, String> headers = new HashMap<String, String>();
+				headers.put("Accept", "application/json");
+				headers.put("Content-Type", "application/json; charset=utf-8");
+				headers.put("accessToken", accessToken);
+				return headers;
+			}
+
+		};
+		jsonObjectRequest.setRetryPolicy(new DefaultRetryPolicy(10 * 1000,// 默认超时时间，应设置一个稍微大点儿的
+				DefaultRetryPolicy.DEFAULT_MAX_RETRIES,// 默认最大尝试次数0
 				DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
 
 		myQueue.add(jsonObjectRequest);

@@ -21,15 +21,18 @@
     <string name="username_empty">用户名不能为空</string>
     <string name="password_empty">密码不能为空</string>
     <string name="login">登录</string>
-    <string name="log_in">登录中</string>
+    <string name="log_in">登录中...</string>
     <string name="internet_abnormal">网络异常，请重新登录</string>
     <string name="home_page">首页</string>
     <string name="publish">发布</string>
     <string name="publish_blog">发布博客</string>
-    <string name="title">标题</string>
+    <string name="title">标题:</string>
     <string name="body">正文...</string>
     <string name="title_empty">博客标题不能为空</string>
     <string name="content_empty">博客正文不能为空</string>
     <string name="internet_abnormal_publish">网络异常，请重试</string>
+    <string name="save_password">记住密码</string>
+    <string name="refresh_succ">刷新成功</string>
+     <string name="refresh_fail">刷新失败</string>
 
 </resources>

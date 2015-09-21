@@ -12,8 +12,6 @@
         android:layout_height="match_parent"
         android:cacheColorHint="@android:color/transparent"
         android:dividerHeight="1px"
-        android:layout_marginLeft="8dip"
-        android:layout_marginRight="8dip"
         android:listSelector="@android:color/transparent"
         android:scrollbars="none" >
 
