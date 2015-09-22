@@ -1,8 +1,9 @@
 package com.ldj.myblog;
 
 public class Const {
-	
+
 	public static final int PAGE_SIZE = 10;
+	public static final String FILTER_REFRESH_BLOG_LIST = "com.ldj.myblog.FILTER_REFRESH_BLOG_LIST";
 
 	public static class Message {
 		public static final int MSG_NETWORK_AVAILABLE = 1;
@@ -20,11 +21,11 @@ public class Const {
 	public static class Request {
 		public static final int REQUEST_SUCC = 200;
 		public static final int REQUEST_FAIL = 201;
-//		public static final String SERVER = "http://jason.tunnel.mobi/blogserver";
+		// public static final String SERVER =
+		// "http://jason.tunnel.mobi/blogserver";
+		public static final String SERVER = "http://192.168.1.101:8888/blogserver";
 //		 public static final String SERVER =
-//		 "http://192.168.1.124:8888/blogserver";
-		 public static final String SERVER =
-				 "http://192.168.1.183:8080/blogserver";
+//		 "http://192.168.1.183:8080/blogserver";
 		public static final String login = SERVER + "/users/login";
 		public static final String publish = SERVER + "/posts";
 		public static final String all = SERVER + "/posts/all";

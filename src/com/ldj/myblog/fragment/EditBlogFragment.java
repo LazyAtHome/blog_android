@@ -1,5 +1,6 @@
 package com.ldj.myblog.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.annotation.Nullable;
@@ -30,6 +31,7 @@ public class EditBlogFragment extends BaseFragment implements
 	ProgressBar refreshBar;
 	MyVolley publishVolley;
 	UserInfos userInfos;
+
 	@Override
 	public View onCreateView(LayoutInflater inflater,
 			@Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -92,6 +94,13 @@ public class EditBlogFragment extends BaseFragment implements
 						.jsonToObject(msg.obj + "", PublishSuccResp.class);
 				refreshBar.setVisibility(View.INVISIBLE);
 				publishBtn.setVisibility(View.VISIBLE);
+				editTitle.setText("");
+				editContent.setText("");
+				Toast.makeText(getActivity(),
+						getResources().getString(R.string.publish_succ),
+						Toast.LENGTH_LONG).show();
+				getActivity().sendBroadcast(
+						new Intent(Const.FILTER_REFRESH_BLOG_LIST));
 			} else if (msg.arg1 == Const.Request.REQUEST_FAIL) {
 				Toast.makeText(getActivity(), msg.obj + "", Toast.LENGTH_SHORT)
 						.show();

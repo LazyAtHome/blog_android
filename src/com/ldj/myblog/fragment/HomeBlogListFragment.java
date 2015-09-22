@@ -43,8 +43,9 @@ public class HomeBlogListFragment extends BaseFragment implements
 		blogAdapter = new HomeBlogAdapter(getActivity());
 		allVolley = new MyVolley(getActivity(), Const.Message.MSG_ALL_SUCC,
 				Const.Message.MSG_ALL_FAIL);
-		allVolley.addParams("page", 1);
+		
 		allVolley.addParams("limit", Const.PAGE_SIZE);
+		
 
 		moreBlogVolley = new MyVolley(getActivity(),
 				Const.Message.MSG_MORE_BLOG_SUCC,
@@ -74,7 +75,7 @@ public class HomeBlogListFragment extends BaseFragment implements
 		mBlogList = (XListView) view.findViewById(R.id.lv_home_blog);
 		// mBlogList.setAdapter(blogAdapter);
 		mBlogList.setXListViewListener(this);
-		allVolley.requestGet(Const.Request.all, getHandler());
+		onRefresh();
 
 	}
 
