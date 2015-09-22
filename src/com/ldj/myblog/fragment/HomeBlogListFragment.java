@@ -2,19 +2,26 @@ package com.ldj.myblog.fragment;
 
 import java.util.List;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.ldj.myblog.Const;
 import com.ldj.myblog.R;
+import com.ldj.myblog.activity.BlogDetailActivity;
 import com.ldj.myblog.adapter.HomeBlogAdapter;
 import com.ldj.myblog.helper.JsonHelper;
 import com.ldj.myblog.model.Blog;
@@ -24,7 +31,7 @@ import com.ldj.myblog.view.XListView;
 import com.ldj.myblog.view.XListView.IXListViewListener;
 
 public class HomeBlogListFragment extends BaseFragment implements
-		OnClickListener, IXListViewListener {
+		OnClickListener, IXListViewListener, OnItemClickListener {
 
 	XListView mBlogList;
 	TextView titleText;
@@ -34,6 +41,7 @@ public class HomeBlogListFragment extends BaseFragment implements
 	HomeBlogAdapter blogAdapter;
 	MyVolley allVolley;
 	MyVolley moreBlogVolley;
+	private static final int REQUEST_DETAIL = 1;
 
 	@Override
 	protected void initFragmentDatas() {
@@ -43,9 +51,8 @@ public class HomeBlogListFragment extends BaseFragment implements
 		blogAdapter = new HomeBlogAdapter(getActivity());
 		allVolley = new MyVolley(getActivity(), Const.Message.MSG_ALL_SUCC,
 				Const.Message.MSG_ALL_FAIL);
-		
+
 		allVolley.addParams("limit", Const.PAGE_SIZE);
-		
 
 		moreBlogVolley = new MyVolley(getActivity(),
 				Const.Message.MSG_MORE_BLOG_SUCC,
@@ -73,6 +80,7 @@ public class HomeBlogListFragment extends BaseFragment implements
 				R.drawable.title_btn_refresh));
 		refreshBtn.setOnClickListener(this);
 		mBlogList = (XListView) view.findViewById(R.id.lv_home_blog);
+		mBlogList.setOnItemClickListener(this);
 		// mBlogList.setAdapter(blogAdapter);
 		mBlogList.setXListViewListener(this);
 		onRefresh();
@@ -83,11 +91,12 @@ public class HomeBlogListFragment extends BaseFragment implements
 	protected void handlerMessage(Message msg) {
 		switch (msg.what) {
 		case Const.Message.MSG_ALL_SUCC:
-			
+
 			refreshBtn.setVisibility(View.VISIBLE);
 			refreshBar.setVisibility(View.INVISIBLE);
 			if (msg.arg1 == Const.Request.REQUEST_SUCC) {
-				mBlogList.stopRefresh(getResources().getString(R.string.refresh_succ));
+				mBlogList.stopRefresh(getResources().getString(
+						R.string.refresh_succ));
 				BlogSuccResp blogs = (BlogSuccResp) JsonHelper.jsonToObject(
 						msg.obj + "", BlogSuccResp.class);
 				blogAdapter.setBlogs(blogs.getData().getPosts());
@@ -98,18 +107,20 @@ public class HomeBlogListFragment extends BaseFragment implements
 							.getPageInfo().getNextPage());
 				} else {
 					mBlogList.setPullLoadEnable(false);
-					
+
 				}
 			} else if (msg.arg1 == Const.Request.REQUEST_FAIL) {
-				mBlogList.stopRefresh(getResources().getString(R.string.refresh_fail));
+				mBlogList.stopRefresh(getResources().getString(
+						R.string.refresh_fail));
 			}
 			break;
 
 		case Const.Message.MSG_ALL_FAIL:
-			mBlogList.stopRefresh(getResources().getString(R.string.refresh_fail));
+			mBlogList.stopRefresh(getResources().getString(
+					R.string.refresh_fail));
 			refreshBtn.setVisibility(View.VISIBLE);
 			refreshBar.setVisibility(View.INVISIBLE);
-			
+
 			break;
 
 		case Const.Message.MSG_MORE_BLOG_SUCC:
@@ -166,6 +177,36 @@ public class HomeBlogListFragment extends BaseFragment implements
 	@Override
 	public void onLoadMore() {
 		moreBlogVolley.requestGet(Const.Request.all, getHandler());
+	}
+
+	@Override
+	public void onItemClick(AdapterView<?> adapterView, View view,
+			int position, long id) {
+		Log.e("----------", "position:" + position);
+		Blog blog = (Blog) adapterView.getAdapter().getItem(position);
+		Intent intent = new Intent(getActivity(), BlogDetailActivity.class);
+		intent.putExtra("blog", JsonHelper.ObjectToJsonStr(blog));
+		startActivityForResult(intent, REQUEST_DETAIL);
+
+	}
+
+	@Override
+	public void onActivityResult(int requestCode, int resultCode, Intent data) {
+		// TODO Auto-generated method stub
+		super.onActivityResult(requestCode, resultCode, data);
+		if (resultCode == Activity.RESULT_OK) {
+			switch (requestCode) {
+			case REQUEST_DETAIL:
+				onRefresh();
+				Toast.makeText(getActivity(),
+						getResources().getString(R.string.delete_succ),
+						Toast.LENGTH_SHORT).show();
+				break;
+
+			default:
+				break;
+			}
+		}
 	}
 
 }

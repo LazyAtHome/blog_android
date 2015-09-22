@@ -15,6 +15,8 @@ public class Const {
 		public static final int MSG_ALL_FAIL = 7;
 		public static final int MSG_MORE_BLOG_SUCC = 8;
 		public static final int MSG_MORE_BLOG_FAIL = 9;
+		public static final int MSG_DELETE_BLOG_SUCC = 10;
+		public static final int MSG_DELETE_BLOG_FAIL = 11;
 
 	}
 
@@ -23,12 +25,13 @@ public class Const {
 		public static final int REQUEST_FAIL = 201;
 		// public static final String SERVER =
 		// "http://jason.tunnel.mobi/blogserver";
-		public static final String SERVER = "http://192.168.1.101:8888/blogserver";
-//		 public static final String SERVER =
-//		 "http://192.168.1.183:8080/blogserver";
+		// public static final String SERVER =
+		// "http://192.168.1.101:8888/blogserver";
+		public static final String SERVER = "http://192.168.1.175:8080/blogserver";
 		public static final String login = SERVER + "/users/login";
 		public static final String publish = SERVER + "/posts";
 		public static final String all = SERVER + "/posts/all";
+		public static final String delete = SERVER + "/posts";
 
 	}
 
