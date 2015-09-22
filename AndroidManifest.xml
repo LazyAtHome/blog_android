@@ -29,9 +29,17 @@
         
          <activity
             android:name="com.ldj.myblog.activity.MainActivity"
+            android:launchMode="singleTop"
+            android:label="@string/app_name" >
+        </activity>
+        
+         <activity
+            android:name="com.ldj.myblog.activity.BlogDetailActivity"
+            android:launchMode="singleTop"
             android:label="@string/app_name" >
             
         </activity>
+         
     </application>
 
 </manifest>
