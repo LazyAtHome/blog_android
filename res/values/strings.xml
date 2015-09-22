@@ -35,5 +35,7 @@
     <string name="refresh_succ">刷新成功</string>
      <string name="refresh_fail">刷新失败</string>
      <string name="publish_succ">发布成功</string>
+     <string name="detail">详情</string>
+     <string name="delete_succ">删除成功</string>
 
 </resources>
