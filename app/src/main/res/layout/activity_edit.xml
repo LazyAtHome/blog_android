@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <EditText
+        android:id="@+id/edit_blog_title"
+        style="@style/edit_text_common"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:layout_marginTop="@dimen/long_margin"
+        android:background="@drawable/orange_frame_white_bg"
+        android:hint="博客标题"
+        android:padding="@dimen/common_padding"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/edit_blog_content"
+        style="@style/edit_text_common"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_frame_height"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginRight="@dimen/common_margin"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/orange_frame_white_bg"
+        android:gravity="top"
+        android:hint="博客正文"
+        android:padding="@dimen/common_padding" />
+
+</LinearLayout>

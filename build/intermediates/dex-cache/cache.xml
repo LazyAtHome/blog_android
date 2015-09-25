@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\1.6\596daefa34b9ea58eac9677b23325b7e60eae948\gson-1.6.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="596daefa34b9ea58eac9677b23325b7e60eae948">
+        <dex dex="F:\code\blog_android\blog_yan\app\build\intermediates\pre-dexed\debug\gson-1.6-29298b8f2bc10aa392c2a5ce87c9dca97d0d3466.jar" />
+    </item>
+    <item
+        jar="F:\code\blog_android\blog_yan\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="F:\code\blog_android\blog_yan\app\build\intermediates\pre-dexed\debug\classes-f74e72dbd37ec48a3e435e5c96e21bc9053734df.jar" />
+    </item>
+    <item
+        jar="F:\code\blog_android\blog_yan\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\jars\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="F:\code\blog_android\blog_yan\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-39a9a75c42a71309cc231cbb59b18ad54218fb02.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\AppData\Local\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="F:\code\blog_android\blog_yan\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-e4b4c799f3a41226032231085d1105900bc1545a.jar" />
+    </item>
+    <item
+        jar="F:\code\blog_android\blog_yan\app\libs\volley.jar"
+        jumboMode="false"
+        revision="23.0.0 rc3"
+        sha1="4a94601db9bdfb7dc60efabb3dea91a0675f591d">
+        <dex dex="F:\code\blog_android\blog_yan\app\build\intermediates\pre-dexed\debug\volley-d44f0b3dbf428adf7663fceffcb088f4741c32be.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,165 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+
+
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="bottom_tab">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">3dip</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="bottom_tab_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="list_blog_user_name">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/highlight</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="list_blog_create_time">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/emphasize</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="list_blog_content">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+    <style name="list_blog_response">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/emphasize</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="login_edit">
+        <item name="android:drawablePadding">25dip</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">9dip</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:textColorHint">#ffdddddd</item>
+    </style>
+    
+    <style name="title_style">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:shadowColor">#0F4689</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">3</item>
+	</style>
+	
+    <style name="title_refresh_style">
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:layout_centerVertical">true</item>
+		<item name="android:layout_marginRight">8dip</item>
+		<item name="android:layout_width">32dip</item>
+		<item name="android:layout_height">30dip</item>
+	</style>
+	
+    <style name="title_progressbar_style" parent="@android:style/Widget.ProgressBar.Large">
+		<item name="android:indeterminateDrawable">@drawable/progressbar_drawable</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:layout_width">22dip</item>
+		<item name="android:layout_height">22dip</item>
+		<item name="android:visibility">gone</item>
+	</style>
+
+
+    <!-- modified by Tiny.Lan -->
+    <style name="title_text">
+        <item name="android:textColor">@color/gray_text_dark</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="title_left_text">
+        <item name="android:textColor">@color/gray_text_common</item>
+        <item name="android:textSize">@dimen/title_left_right_text_size</item>
+    </style>
+
+    <style name="title_right_text">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">@dimen/title_left_right_text_size</item>
+    </style>
+
+    <style name="white_text_big">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_big</item>
+    </style>
+    <style name="black_text_big">
+        <item name="android:textColor">@color/common_text_black</item>
+        <item name="android:textSize">@dimen/text_big</item>
+    </style>
+
+    <style name="black_text_common">
+        <item name="android:textColor">@color/common_text_black</item>
+        <item name="android:textSize">@dimen/text_common</item>
+    </style>
+
+    <style name="black_text_small">
+        <item name="android:textColor">@color/common_text_black</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="orange_text_small">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style>
+
+    <style name="orange_text_big">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">@dimen/text_big</item>
+    </style>
+
+    <style name="edit_text_common">
+        <item name="android:textColorHint">@color/gray_text_common</item>
+        <item name="android:textColor">@color/common_text_black</item>
+        <item name="android:textSize">@dimen/text_common</item>
+    </style>
+
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="20.0.0"><source path="F:\code\blog_android\blog_yan\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\res"/></dataSet><dataSet config="main"><source path="F:\code\blog_android\blog_yan\app\src\main\res"><file name="bg_main_bottom_edit" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable\bg_main_bottom_edit.xml" qualifiers="" type="drawable"/><file name="bg_main_bottom_home" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable\bg_main_bottom_home.xml" qualifiers="" type="drawable"/><file name="bg_main_bottom_more" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable\bg_main_bottom_more.xml" qualifiers="" type="drawable"/><file name="btn_login_selector" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable\btn_login_selector.xml" qualifiers="" type="drawable"/><file name="btn_publish_blog_selector" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable\btn_publish_blog_selector.xml" qualifiers="" type="drawable"/><file name="progressbar_drawable" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable\progressbar_drawable.xml" qualifiers="" type="drawable"/><file name="title_btn_refresh" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable\title_btn_refresh.xml" qualifiers="" type="drawable"/><file name="bg_bottom_bar" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\bg_bottom_bar.png" qualifiers="hdpi" type="drawable"/><file name="btn_add_normal" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\btn_add_normal.png" qualifiers="hdpi" type="drawable"/><file name="btn_add_pressed" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\btn_add_pressed.png" qualifiers="hdpi" type="drawable"/><file name="card_background_white" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\card_background_white.9.png" qualifiers="hdpi" type="drawable"/><file name="head" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\head.png" qualifiers="hdpi" type="drawable"/><file name="icon_home_blog_list_profile" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\icon_home_blog_list_profile.png" qualifiers="hdpi" type="drawable"/><file name="icon_main_bottom_edit" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\icon_main_bottom_edit.png" qualifiers="hdpi" type="drawable"/><file name="icon_main_bottom_edit_hover" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\icon_main_bottom_edit_hover.png" qualifiers="hdpi" type="drawable"/><file name="icon_main_bottom_home" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\icon_main_bottom_home.png" qualifiers="hdpi" type="drawable"/><file name="icon_main_bottom_home_hover" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\icon_main_bottom_home_hover.png" qualifiers="hdpi" type="drawable"/><file name="icon_main_bottom_more" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\icon_main_bottom_more.png" qualifiers="hdpi" type="drawable"/><file name="icon_main_bottom_more_hover" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\icon_main_bottom_more_hover.png" qualifiers="hdpi" type="drawable"/><file name="ic_launcher" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\ic_launcher.png" qualifiers="hdpi" type="drawable"/><file name="refresh" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\refresh.png" qualifiers="hdpi" type="drawable"/><file name="refresh_click" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\refresh_click.png" qualifiers="hdpi" type="drawable"/><file name="spinner_white_48" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\spinner_white_48.png" qualifiers="hdpi" type="drawable"/><file name="xlistview_arrow" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\xlistview_arrow.png" qualifiers="hdpi" type="drawable"/><file name="ic_launcher" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-mdpi\ic_launcher.png" qualifiers="mdpi" type="drawable"/><file name="base_horization_line" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-xhdpi\base_horization_line.png" qualifiers="xhdpi" type="drawable"/><file name="btn_login_n" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-xhdpi\btn_login_n.9.png" qualifiers="xhdpi" type="drawable"/><file name="btn_login_p" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-xhdpi\btn_login_p.9.png" qualifiers="xhdpi" type="drawable"/><file name="ic_launcher" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-xhdpi\ic_launcher.png" qualifiers="xhdpi" type="drawable"/><file name="input_bg" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-xhdpi\input_bg.9.png" qualifiers="xhdpi" type="drawable"/><file name="login_bg" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-xhdpi\login_bg.png" qualifiers="xhdpi" type="drawable"/><file name="login_icon_account" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-xhdpi\login_icon_account.png" qualifiers="xhdpi" type="drawable"/><file name="login_icon_password" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-xhdpi\login_icon_password.png" qualifiers="xhdpi" type="drawable"/><file name="ic_launcher" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-xxhdpi\ic_launcher.png" qualifiers="xxhdpi" type="drawable"/><file name="activity_login" path="F:\code\blog_android\blog_yan\app\src\main\res\layout\activity_login.xml" qualifiers="" type="layout"/><file name="activity_test" path="F:\code\blog_android\blog_yan\app\src\main\res\layout\activity_test.xml" qualifiers="" type="layout"/><file name="divider1sp" path="F:\code\blog_android\blog_yan\app\src\main\res\layout\divider1sp.xml" qualifiers="" type="layout"/><file name="xlistview_footer" path="F:\code\blog_android\blog_yan\app\src\main\res\layout\xlistview_footer.xml" qualifiers="" type="layout"/><file name="xlistview_header" path="F:\code\blog_android\blog_yan\app\src\main\res\layout\xlistview_header.xml" qualifiers="" type="layout"/><file name="main" path="F:\code\blog_android\blog_yan\app\src\main\res\menu\main.xml" qualifiers="" type="menu"/><file path="F:\code\blog_android\blog_yan\app\src\main\res\values\colors.xml" qualifiers=""><color name="highlight">#3188d5</color><color name="red">#ff6766</color><color name="transparent_bg">#00000000</color><color name="gray_text_common">#a4a4a4</color><color name="red_button">#ff7878</color><color name="bottom_divider_color">#D8D8D8</color><color name="dark_blue">#007777</color><color name="bg_dark_gray">#a8a8a8</color><color name="blue">#00abde</color><color name="emphasize">#5986d3</color><color name="bg_gray">#f0f0f0</color><color name="orange">#ff8202</color><color name="transparent">#000000</color><color name="common_text_black">#555555</color><color name="gray_text_dark">#a0a0a0</color><color name="gray_line">#a8a8a8</color><color name="divider_color">#eecbcbcb</color><color name="white">#ffffff</color></file><file path="F:\code\blog_android\blog_yan\app\src\main\res\values\dimens.xml" qualifiers=""><dimen name="navigation_bar_height">40dp</dimen><dimen name="common_margin">10dp</dimen><dimen name="activity_vertical_margin">16dp</dimen><dimen name="text_big">18sp</dimen><dimen name="text_small">12sp</dimen><dimen name="long_margin">20dp</dimen><dimen name="head_portrait_height">48dp</dimen><dimen name="top_bar_height">43dip</dimen><dimen name="title_left_right_text_size">16sp</dimen><dimen name="long_padding">20dp</dimen><dimen name="common_padding">10dp</dimen><dimen name="title_bar_padding">20dp</dimen><dimen name="line_height">1px</dimen><dimen name="text_common">15sp</dimen><dimen name="edit_frame_height">450dp</dimen><dimen name="activity_horizontal_margin">16dp</dimen><dimen name="title_text_size">20sp</dimen><dimen name="title_bar_height">48dp</dimen><dimen name="head_portrait_width">48dp</dimen></file><file path="F:\code\blog_android\blog_yan\app\src\main\res\values\strings.xml" qualifiers=""><string name="publish">发布</string><string name="publish_blog">发布博客</string><string name="title">标题</string><string name="xlistview_header_hint_loading">正在加载...</string><string name="refresh_succ">刷新成功</string><string name="text_logout">退出登录</string><string name="username_empty">用户名不能为空</string><string name="xlistview_footer_hint_normal">查看更多</string><string name="log_in">登录中</string><string name="xlistview_header_hint_normal">下拉刷新</string><string name="text_me_id_common">123456</string><string name="lable_vistors">浏览</string><string name="login_password_hint">输入密码</string><string name="login">登录</string><string name="request_fail">请求失败</string><string name="hello_world">Hello world!</string><string name="label_loading">加载中...</string><string name="delete_succ">删除成功</string><string name="content_empty">博客正文不能为空</string><string name="xlistview_header_last_time">上次更新时间：</string><string name="internet_abnormal">网络异常，请重新登录</string><string name="title_empty">博客标题不能为空</string><string name="action_settings">Settings</string><string name="xlistview_header_hint_ready">松开刷新数据</string><string name="app_name">SkyBlog</string><string name="refresh_fail">刷新失败</string><string name="body">正文...</string><string name="internet_abnormal_publish">网络异常，请重试</string><string name="login_username_hint">输入用户名</string><string name="xlistview_footer_hint_ready">松开载入更多</string><string name="password_empty">密码不能为空</string><string name="text_me_name_common">蓝天</string><string name="home_page">首页</string><string name="login_success">登录成功</string></file><file path="F:\code\blog_android\blog_yan\app\src\main\res\values\styles.xml" qualifiers=""><style name="bottom_tab">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">3dip</item>
+        <item name="android:gravity">center</item>
+    </style><style name="orange_text_big">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">@dimen/text_big</item>
+    </style><style name="title_progressbar_style" parent="@android:style/Widget.ProgressBar.Large">
+		<item name="android:indeterminateDrawable">@drawable/progressbar_drawable</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:layout_width">22dip</item>
+		<item name="android:layout_height">22dip</item>
+		<item name="android:visibility">gone</item>
+	</style><style name="edit_text_common">
+        <item name="android:textColorHint">@color/gray_text_common</item>
+        <item name="android:textColor">@color/common_text_black</item>
+        <item name="android:textSize">@dimen/text_common</item>
+    </style><style name="title_right_text">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">@dimen/title_left_right_text_size</item>
+    </style><style name="title_left_text">
+        <item name="android:textColor">@color/gray_text_common</item>
+        <item name="android:textSize">@dimen/title_left_right_text_size</item>
+    </style><style name="login_edit">
+        <item name="android:drawablePadding">25dip</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">9dip</item>
+        <item name="android:paddingLeft">15dip</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:textColorHint">#ffdddddd</item>
+    </style><style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style><style name="list_blog_response">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/emphasize</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+    </style><style name="list_blog_user_name">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/highlight</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+    </style><style name="bottom_tab_image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:clickable">true</item>
+    </style><style name="list_blog_create_time">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/emphasize</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+    </style><style name="title_style">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:shadowColor">#0F4689</item>
+		<item name="android:shadowDx">1</item>
+		<item name="android:shadowDy">1</item>
+		<item name="android:shadowRadius">3</item>
+	</style><style name="black_text_small">
+        <item name="android:textColor">@color/common_text_black</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style><style name="list_blog_content">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style><style name="black_text_common">
+        <item name="android:textColor">@color/common_text_black</item>
+        <item name="android:textSize">@dimen/text_common</item>
+    </style><style name="title_refresh_style">
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:layout_centerVertical">true</item>
+		<item name="android:layout_marginRight">8dip</item>
+		<item name="android:layout_width">32dip</item>
+		<item name="android:layout_height">30dip</item>
+	</style><style name="white_text_big">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_big</item>
+    </style><style name="black_text_big">
+        <item name="android:textColor">@color/common_text_black</item>
+        <item name="android:textSize">@dimen/text_big</item>
+    </style><style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+
+
+
+        -->
+    </style><style name="title_text">
+        <item name="android:textColor">@color/gray_text_dark</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style><style name="orange_text_small">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">@dimen/text_small</item>
+    </style></file><file path="F:\code\blog_android\blog_yan\app\src\main\res\values-v11\styles.xml" qualifiers="v11"><style name="AppBaseTheme" parent="android:Theme.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style></file><file path="F:\code\blog_android\blog_yan\app\src\main\res\values-v14\styles.xml" qualifiers="v14"><style name="AppBaseTheme" parent="android:Theme.Light">
+        <!-- API 14 theme customizations can go here. -->
+    </style></file><file path="F:\code\blog_android\blog_yan\app\src\main\res\values-w820dp\dimens.xml" qualifiers="w820dp"><dimen name="activity_horizontal_margin">64dp</dimen></file><file name="head_portrait" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\head_portrait.jpg" qualifiers="hdpi" type="drawable"/><file name="gray_frame_white_bg" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable\gray_frame_white_bg.xml" qualifiers="" type="drawable"/><file name="gray_frame_just_bottom" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable\gray_frame_just_bottom.xml" qualifiers="" type="drawable"/><file name="button_me" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable\button_me.xml" qualifiers="" type="drawable"/><file name="button_home" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable\button_home.xml" qualifiers="" type="drawable"/><file name="publish" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\publish.png" qualifiers="hdpi" type="drawable"/><file name="me_selected" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\me_selected.png" qualifiers="hdpi" type="drawable"/><file name="activity_home" path="F:\code\blog_android\blog_yan\app\src\main\res\layout\activity_home.xml" qualifiers="" type="layout"/><file name="home" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\home.png" qualifiers="hdpi" type="drawable"/><file name="button_publish" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable\button_publish.xml" qualifiers="" type="drawable"/><file name="me" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\me.png" qualifiers="hdpi" type="drawable"/><file name="publish_selected" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\publish_selected.png" qualifiers="hdpi" type="drawable"/><file name="home_selected" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable-hdpi\home_selected.png" qualifiers="hdpi" type="drawable"/><file name="include_navigation_bar" path="F:\code\blog_android\blog_yan\app\src\main\res\layout\include_navigation_bar.xml" qualifiers="" type="layout"/><file name="activity_edit" path="F:\code\blog_android\blog_yan\app\src\main\res\layout\activity_edit.xml" qualifiers="" type="layout"/><file name="include_title_bar" path="F:\code\blog_android\blog_yan\app\src\main\res\layout\include_title_bar.xml" qualifiers="" type="layout"/><file name="orange_frame_white_bg" path="F:\code\blog_android\blog_yan\app\src\main\res\drawable\orange_frame_white_bg.xml" qualifiers="" type="drawable"/><file name="fragment_home" path="F:\code\blog_android\blog_yan\app\src\main\res\layout\fragment_home.xml" qualifiers="" type="layout"/><file name="fragment_publish" path="F:\code\blog_android\blog_yan\app\src\main\res\layout\fragment_publish.xml" qualifiers="" type="layout"/><file name="fragment_me" path="F:\code\blog_android\blog_yan\app\src\main\res\layout\fragment_me.xml" qualifiers="" type="layout"/><file name="activity_my" path="F:\code\blog_android\blog_yan\app\src\main\res\layout\activity_my.xml" qualifiers="" type="layout"/><file name="item_blog_list" path="F:\code\blog_android\blog_yan\app\src\main\res\layout\item_blog_list.xml" qualifiers="" type="layout"/><file name="activity_blog_detail" path="F:\code\blog_android\blog_yan\app\src\main\res\layout\activity_blog_detail.xml" qualifiers="" type="layout"/></source><source path="F:\code\blog_android\blog_yan\app\build\generated\res\rs\debug"/><source path="F:\code\blog_android\blog_yan\app\build\generated\res\generated\debug"/></dataSet><dataSet config="debug"><source path="F:\code\blog_android\blog_yan\app\src\debug\res"/></dataSet><mergedItems/></merger>

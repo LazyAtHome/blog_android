@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/layout_publish"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/long_margin"
+        android:background="@drawable/gray_frame_just_bottom"
+        android:paddingBottom="@dimen/common_padding"
+        android:paddingLeft="@dimen/long_padding"
+        android:paddingRight="@dimen/long_padding"
+        android:paddingTop="@dimen/common_padding">
+
+        <ImageView
+            android:id="@+id/img_publish"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/publish" />
+
+        <TextView
+            android:id="@+id/text_publish"
+            style="@style/orange_text_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_publish"
+            android:layout_marginLeft="@dimen/common_margin"
+            android:layout_toRightOf="@id/img_publish"
+            android:text="@string/publish_blog" />
+
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/F:/code/blog_android/blog_yan/app/src/main/res/layout/fragment_publish.xml -->

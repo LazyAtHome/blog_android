@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/layout_me_information"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@drawable/gray_frame_just_bottom"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/common_padding"
+        android:paddingLeft="@dimen/long_padding"
+        android:paddingRight="@dimen/long_padding"
+        android:paddingTop="@dimen/common_padding">
+
+        <ImageView
+            android:id="@+id/img_me"
+            android:layout_width="@dimen/head_portrait_width"
+            android:layout_height="@dimen/head_portrait_height"
+            android:src="@drawable/head_portrait" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/long_margin"
+            android:layout_marginRight="@dimen/common_margin"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_me_username"
+                style="@style/black_text_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_me_name_common" />
+
+            <TextView
+                android:id="@+id/text_me_userId"
+                style="@style/black_text_common"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_me_id_common" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_me_blog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/long_margin"
+        android:background="@drawable/gray_frame_just_bottom"
+        android:gravity="center"
+        android:paddingBottom="@dimen/common_padding"
+        android:paddingTop="@dimen/common_padding">
+
+        <TextView
+            style="@style/black_text_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看自己的博客" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_me_logout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@drawable/gray_frame_just_bottom"
+        android:gravity="center"
+        android:paddingBottom="@dimen/common_padding"
+        android:paddingTop="@dimen/common_padding">
+
+        <TextView
+            style="@style/orange_text_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_logout" />
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/F:/code/blog_android/blog_yan/app/src/main/res/layout/fragment_me.xml -->
