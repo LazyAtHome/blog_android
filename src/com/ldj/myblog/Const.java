@@ -27,8 +27,8 @@ public class Const {
         // "http://jason.tunnel.mobi/blogserver";
         public static final String SERVER =
                 "http://192.168.1.101:8888/blogserver";
-        //		public static final String SERVER =
-//				"http://192.168.1.175:8080/blogserver";
+		// public static final String SERVER =
+		// "http://192.168.1.111:8080/blogserver";
         public static final String login = SERVER + "/users/login";
         public static final String publish = SERVER + "/posts";
         public static final String all = SERVER + "/posts/all";

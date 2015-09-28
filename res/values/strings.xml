@@ -18,10 +18,13 @@
     <string name="request_fail">请求失败</string>
     <string name="login_username_hint">输入用户名</string>
     <string name="login_password_hint">输入密码</string>
+    <string name="register_password_confirm_hint">再次输入密码</string>
+    <string name="register_usermail_hint">输入邮箱</string>
     <string name="username_empty">用户名不能为空</string>
     <string name="password_empty">密码不能为空</string>
     <string name="login">登录</string>
     <string name="log_in">登录中...</string>
+    <string name="register">注册</string>
     <string name="internet_abnormal">网络异常，请重新登录</string>
     <string name="home_page">首页</string>
     <string name="publish">发布</string>

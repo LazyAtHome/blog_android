@@ -22,7 +22,7 @@ import com.ldj.myblog.sherepre.UserInfosPref;
 public class LoginActivity extends FindInitActivity implements OnClickListener {
 
 	EditText userNameEdit, passwordEdit;
-	Button loginBtn;
+	Button loginBtn,registerBtn;
 	MyVolley loginVolley;
 	String name, password;
 	UserInfosPref userInfosPref;
@@ -47,6 +47,8 @@ public class LoginActivity extends FindInitActivity implements OnClickListener {
 				savePwdImage.setSelected(true);
 			}
 			userInfosPref.setSavePwd(savePwdImage.isSelected());
+		}else if(v == registerBtn){
+			dealActivityIntent(RegisterActivity.class);
 		}
 	}
 
@@ -96,12 +98,14 @@ public class LoginActivity extends FindInitActivity implements OnClickListener {
 		loginBtn = (Button) findViewById(R.id.btn_login);
 		savePwdParent = (LinearLayout) findViewById(R.id.ll_save_pwd);
 		savePwdImage = (ImageView) findViewById(R.id.iv_save_pwd);
+		registerBtn = (Button) findViewById(R.id.btn_reg);
 
 	}
 
 	@Override
 	protected void initMyViews() {
 		loginBtn.setOnClickListener(this);
+		registerBtn.setOnClickListener(this);
 		savePwdParent.setOnClickListener(this);
 		String name = userInfosPref.getUserName();
 		
