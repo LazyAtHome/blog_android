@@ -5,4 +5,4 @@
     <item android:drawable="@drawable/icon_main_bottom_edit_hover" android:state_pressed="true"/>
     <item android:drawable="@drawable/icon_main_bottom_edit"/>
 
-</selector><!-- From: file:/F:/code/blog_android/blog_yan/app/src/main/res/drawable/bg_main_bottom_edit.xml -->
+</selector><!-- From: file:/F:/code/Blog_Yan/blog_android_lan/blog_android/app/src/main/res/drawable/bg_main_bottom_edit.xml -->

@@ -21,6 +21,7 @@ public class LoginActivity extends FindInitActivity implements OnClickListener {
 
     EditText userNameEdit, passwordEdit;
     Button loginBtn;
+    Button registerBtn;
     MyVolley loginVolley;
     UserInfosPref userInfosPref;
     CheckBox checkSavePassword;
@@ -40,12 +41,10 @@ public class LoginActivity extends FindInitActivity implements OnClickListener {
             loginBtn.setEnabled(false);
             login();
         }
+        if (v == registerBtn) {
+            dealActivityIntent(RegisterActivity.class);
+        }
         if (v == checkSavePassword) {
-//            if (savePwdImage.isSelected()) {
-//                savePwdImage.setSelected(false);
-//            } else {
-//                savePwdImage.setSelected(true);
-//            }
             userInfosPref.setSavePwd(checkSavePassword.isSelected());
         }
     }
@@ -88,6 +87,7 @@ public class LoginActivity extends FindInitActivity implements OnClickListener {
         userNameEdit = (EditText) findViewById(R.id.edit_login_username);
         passwordEdit = (EditText) findViewById(R.id.edit_login_password);
         loginBtn = (Button) findViewById(R.id.btn_login_login);
+        registerBtn = (Button) findViewById(R.id.btn_login_register);
         checkSavePassword = (CheckBox) findViewById(R.id.check_save_password);
     }
 
@@ -95,6 +95,7 @@ public class LoginActivity extends FindInitActivity implements OnClickListener {
     protected void initMyViews() {
         checkSavePassword.setPressed(true);
         loginBtn.setOnClickListener(this);
+        registerBtn.setOnClickListener(this);
         checkSavePassword.setOnClickListener(this);
         String name = userInfosPref.getUserName();
 

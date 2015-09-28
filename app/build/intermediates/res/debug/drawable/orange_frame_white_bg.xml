@@ -4,7 +4,7 @@
 
     <solid android:color="@color/white" />
     <stroke
-        android:width="1px"
+        android:width="1dp"
         android:color="@color/orange" />
 
-</shape><!-- From: file:/F:/code/blog_android/blog_yan/app/src/main/res/drawable/orange_frame_white_bg.xml -->
+</shape><!-- From: file:/F:/code/Blog_Yan/blog_android_lan/blog_android/app/src/main/res/drawable/orange_frame_white_bg.xml -->

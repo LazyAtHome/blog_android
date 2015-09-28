@@ -101,5 +101,16 @@
         android:background="@color/orange"
         android:text="登录" />
 
+    <Button
+        android:id="@+id/btn_login_register"
+        style="@style/orange_text_big"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="@dimen/long_margin"
+        android:layout_marginRight="@dimen/long_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@drawable/orange_frame_white_bg"
+        android:text="注册" />
+
 
 </LinearLayout>

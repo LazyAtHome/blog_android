@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_register_back"
+        style="@style/title_left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@null"
+        android:text="返回" />
+
+    <ImageView
+        android:layout_width="@dimen/head_portrait_width"
+        android:layout_height="@dimen/head_portrait_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/head_portrait" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/long_margin"
+        android:layout_marginRight="@dimen/long_margin"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/black_text_common"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/btn_height_common"
+            android:background="@drawable/gray_frame_white_bg"
+            android:gravity="center"
+            android:padding="@dimen/common_padding"
+            android:text="注册邮箱" />
+
+        <EditText
+            android:id="@+id/edit_register_mail"
+            style="@style/black_text_common"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_common"
+            android:layout_weight="1"
+            android:background="@drawable/gray_frame_white_bg"
+            android:hint="请输入您的注册邮箱"
+            android:paddingLeft="@dimen/common_padding" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/long_margin"
+        android:layout_marginRight="@dimen/long_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/black_text_common"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/btn_height_common"
+            android:background="@drawable/gray_frame_white_bg"
+            android:gravity="center"
+            android:padding="@dimen/common_padding"
+            android:text="用户名" />
+
+        <EditText
+            android:id="@+id/edit_register_username"
+            style="@style/black_text_common"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_common"
+            android:layout_weight="1"
+            android:background="@drawable/gray_frame_white_bg"
+            android:hint="请输入您的用户名"
+            android:paddingLeft="@dimen/common_padding" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/long_margin"
+        android:layout_marginRight="@dimen/long_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/black_text_common"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/btn_height_common"
+            android:background="@drawable/gray_frame_white_bg"
+            android:gravity="center"
+            android:padding="@dimen/common_padding"
+            android:text="输入密码" />
+
+        <EditText
+            android:id="@+id/edit_register_password"
+            style="@style/black_text_common"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_common"
+            android:layout_weight="1"
+            android:background="@drawable/gray_frame_white_bg"
+            android:hint="请输入您的用户密码"
+            android:paddingLeft="@dimen/common_padding"
+            android:password="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/long_margin"
+        android:layout_marginRight="@dimen/long_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/black_text_common"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/btn_height_common"
+            android:background="@drawable/gray_frame_white_bg"
+            android:gravity="center"
+            android:padding="@dimen/common_padding"
+            android:text="确认密码" />
+
+        <EditText
+            android:id="@+id/edit_register_password2"
+            style="@style/black_text_common"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_common"
+            android:layout_weight="1"
+            android:background="@drawable/gray_frame_white_bg"
+            android:hint="请再次输入您的用户密码"
+            android:paddingLeft="@dimen/common_padding"
+            android:password="true" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register_register"
+        style="@style/white_text_big"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_height_common"
+        android:layout_marginLeft="@dimen/long_margin"
+        android:layout_marginRight="@dimen/long_margin"
+        android:layout_marginTop="50dp"
+        android:background="@color/orange"
+        android:text="确认注册" />
+
+    <Button
+        android:id="@+id/btn_register_cancel"
+        style="@style/orange_text_big"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_height_common"
+        android:layout_marginLeft="@dimen/long_margin"
+        android:layout_marginRight="@dimen/long_margin"
+        android:layout_marginTop="@dimen/common_margin"
+        android:background="@drawable/orange_frame_white_bg"
+        android:text="重置信息" />
+
+</LinearLayout>
