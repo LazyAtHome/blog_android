@@ -1,5 +1,9 @@
 package com.ldj.myblog.activity;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.v4.app.FragmentManager;
@@ -10,6 +14,7 @@ import android.view.View.OnClickListener;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
+import com.ldj.myblog.Const;
 import com.ldj.myblog.R;
 import com.ldj.myblog.fragment.BaseFragment;
 import com.ldj.myblog.fragment.EditBlogFragment;
@@ -25,12 +30,38 @@ public class MainActivity extends FindInitActivity implements OnClickListener {
 	HomeBlogListFragment homeFragment;
 	FragmentManager fragmentMgr;
 	ImageView homeTabImage, editTabImage, moreTabImage;
+	
+	
+	BroadcastReceiver refreshBlogReceiver  = new BroadcastReceiver() {
+		
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			homeTabImage.performClick();
+			if(homeFragment != null && homeFragment.isAdded()){
+				homeFragment.onRefresh();
+			}
+		}
+	};
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		setContentView(R.layout.activity_main);
 		super.onCreate(savedInstanceState);
 
+	}
+	
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		super.onStart();
+		registerReceiver(refreshBlogReceiver, new IntentFilter(Const.FILTER_REFRESH_BLOG_LIST));
+	}
+	
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		unregisterReceiver(refreshBlogReceiver);
 	}
 
 	

@@ -72,13 +72,14 @@ public class HomeBlogAdapter extends BaseAdapter {
 		holder.profile = (ImageView) view
 				.findViewById(R.id.iv_blog_list_profile);
 		holder.userName = (TextView) view
-				.findViewById(R.id.tv_list_blog_user_name);
+				.findViewById(R.id.tv_list_blog_publisher);
 		holder.createTime = (TextView) view
 				.findViewById(R.id.tv_list_blog_create_time);
 		holder.content = (TextView) view
 				.findViewById(R.id.tv_list_blog_content);
 		holder.reponse = (TextView) view
 				.findViewById(R.id.tv_list_blog_response);
+		holder.title = (TextView) view.findViewById(R.id.tv_list_blog_title);
 		view.setTag(holder);
 	}
 
@@ -86,6 +87,7 @@ public class HomeBlogAdapter extends BaseAdapter {
 		holder.userName.setText(blog.getCreatedBy());
 		holder.createTime.setText(blog.getCreatedDate());
 		holder.content.setText(blog.getContent());
+		holder.title.setText(blog.getTitle());
 		holder.reponse.setText(context.getResources().getString(
 				R.string.lable_vistors)
 				+ "(" + blog.getViewCount() + ")");
@@ -97,6 +99,7 @@ public class HomeBlogAdapter extends BaseAdapter {
 		public TextView createTime;
 		public TextView content;
 		public TextView reponse;
+		public TextView title;
 	}
 
 }

@@ -4,17 +4,45 @@
     <string name="app_name">MyBlog</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-	<string name="label_loading">加载中...</string>	
-	<!-- xlistview -->
-	<string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="label_loading">加载中...</string>
+    <!--   xlistview
+    -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
     <string name="xlistview_header_hint_ready">松开刷新数据</string>
     <string name="xlistview_header_hint_loading">正在加载...</string>
     <string name="xlistview_header_last_time">上次更新时间：</string>
     <string name="xlistview_footer_hint_normal">查看更多</string>
     <string name="xlistview_footer_hint_ready">松开载入更多</string>
-    
-    <!--  -->
+    <!--   -->
     <string name="lable_vistors">浏览</string>
-    
     <string name="request_fail">请求失败</string>
+    <string name="login_username_hint">输入用户名</string>
+    <string name="login_password_hint">输入密码</string>
+    <string name="register_password_confirm_hint">再次输入密码</string>
+    <string name="register_usermail_hint">输入邮箱</string>
+    <string name="username_empty">用户名不能为空</string>
+    <string name="password_empty">密码不能为空</string>
+    <string name="login">登录</string>
+    <string name="log_in">登录中...</string>
+    <string name="register">注册</string>
+    <string name="internet_abnormal">网络异常，请重新登录</string>
+    <string name="home_page">首页</string>
+    <string name="publish">发布</string>
+    <string name="publish_blog">发布博客</string>
+    <string name="title">标题:</string>
+    <string name="body">正文...</string>
+    <string name="title_empty">博客标题不能为空</string>
+    <string name="content_empty">博客正文不能为空</string>
+    <string name="internet_abnormal_publish">网络异常，请重试</string>
+    <string name="save_password">记住密码</string>
+    <string name="refresh_succ">刷新成功</string>
+     <string name="refresh_fail">刷新失败</string>
+     <string name="publish_succ">发布成功</string>
+     <string name="detail">详情</string>
+     <string name="delete_succ">删除成功</string>
+    <string name="delete_blog">确定删除此条博客？</string>
+    <string name="mention">提示</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+
 </resources>

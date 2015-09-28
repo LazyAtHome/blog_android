@@ -13,9 +13,6 @@ public class Blog {
 	String createdBy;
 	String updatedBy;
 	String commentCount;
-	
-	
-	
 	public Blog() {
 		super();
 	}

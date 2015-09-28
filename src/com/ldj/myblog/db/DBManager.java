@@ -13,7 +13,7 @@ import android.database.sqlite.SQLiteDatabase;
  * 
  */
 public class DBManager {
-	private int version = 14;
+	private int version = 1;
 
 	private static DBManager dBManager = null;
 

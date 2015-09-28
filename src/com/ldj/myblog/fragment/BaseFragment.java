@@ -52,10 +52,15 @@ public abstract class BaseFragment extends Fragment{
 		return handler;
 	}
 
-	protected void dealActivityIntent(Activity activity) {
-		Intent intent = new Intent(getActivity(), activity.getClass());
+	protected void dealActivityIntent(Class activity) {
+		Intent intent = new Intent(getActivity(), activity);
 		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-		getActivity().startActivity(intent);
+		startActivity(intent);
+	}
+	
+	protected void dealActivityIntent(Intent intent) {
+		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+		startActivity(intent);
 	}
 
 	protected abstract void handlerMessage(Message msg);

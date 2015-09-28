@@ -1,5 +1,8 @@
 package com.ldj.myblog.util;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -17,7 +20,12 @@ public class Map2KV {
 		Iterator<Entry<String, Object>> iterator = entries.iterator();
 		while (iterator.hasNext()) {
 			Entry<String, Object> entry = iterator.next();
-			endFix += entry.getKey() + "=" + entry.getValue() + "&";
+			try {
+				endFix += entry.getKey() + "=" + entry.getValue() + "&";
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 
 		if (endFix.endsWith("&")) {
