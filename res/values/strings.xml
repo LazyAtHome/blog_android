@@ -22,9 +22,15 @@
     <string name="register_usermail_hint">输入邮箱</string>
     <string name="username_empty">用户名不能为空</string>
     <string name="password_empty">密码不能为空</string>
+    <string name="password_not_confirm">俩次输入密码不一致</string>
+    <string name="uname_illegal">用户名长度需在5-20位之间</string>
+    <string name="pwd_illegal">密码长度需在5-20位之间</string>
+    <string name="mail_illegal">邮箱格式不正确</string>
+    <string name="register_succ">注册成功</string>
     <string name="login">登录</string>
     <string name="log_in">登录中...</string>
     <string name="register">注册</string>
+    <string name="register_in">注册中...</string>
     <string name="internet_abnormal">网络异常，请重新登录</string>
     <string name="home_page">首页</string>
     <string name="publish">发布</string>

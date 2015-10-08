@@ -8,5 +8,6 @@ public class BaseActivity extends FragmentActivity{
 		Intent intent = new Intent(this, activity);
 		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 		startActivity(intent);
+		
 	}
 }

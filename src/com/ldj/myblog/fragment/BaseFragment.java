@@ -39,7 +39,7 @@ public abstract class BaseFragment extends Fragment{
 
 	
 
-	protected Handler handler = new Handler() {
+	 protected Handler handler = new Handler() {
 		public void handleMessage(Message msg) {
 			if (getActivity() == null ||getActivity().isFinishing()) {
 				return;
