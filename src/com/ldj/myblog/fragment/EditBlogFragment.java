@@ -99,8 +99,9 @@ public class EditBlogFragment extends BaseFragment implements
 				Toast.makeText(getActivity(),
 						getResources().getString(R.string.publish_succ),
 						Toast.LENGTH_LONG).show();
-				getActivity().sendBroadcast(
-						new Intent(Const.FILTER_REFRESH_BLOG_LIST));
+				Intent refreshIntent = new Intent(Const.FILTER_REFRESH_BLOG_LIST);
+				refreshIntent.putExtra("clicked", true);
+				getActivity().sendBroadcast(refreshIntent);
 			} else if (msg.arg1 == Const.Request.REQUEST_FAIL) {
 				Toast.makeText(getActivity(), msg.obj + "", Toast.LENGTH_SHORT)
 						.show();

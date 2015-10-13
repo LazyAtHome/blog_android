@@ -142,6 +142,7 @@ public class LoginActivity extends FindInitActivity implements OnClickListener {
 			}
 			break;
 		case Const.Message.MSG_LOGIN_FAIL:
+			
 			loginBtn.setText(R.string.login);
 			loginBtn.setEnabled(true);
 			Toast.makeText(getApplicationContext(), R.string.internet_abnormal,

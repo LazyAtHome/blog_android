@@ -37,7 +37,6 @@ public class RegisterActivity extends FindInitActivity implements
 
 	@Override
 	protected void findMyViews() {
-
 		rightTitleBtn = (ImageButton) findViewById(R.id.btn_title_right);
 		titleText = (TextView) findViewById(R.id.tv_title);
 		unameEidt = (EditText) findViewById(R.id.et_username);
@@ -57,7 +56,6 @@ public class RegisterActivity extends FindInitActivity implements
 	@Override
 	protected void handlerMessage(Message msg) {
 		switch (msg.what) {
-
 		case Const.Message.MSG_REGISTER_SUCC:
 			registerBtn.setText(R.string.register);
 			registerBtn.setEnabled(true);
@@ -71,12 +69,10 @@ public class RegisterActivity extends FindInitActivity implements
 						Toast.LENGTH_SHORT).show();
 			}
 			break;
-
 		case Const.Message.MSG_REGISTER_FAIL:
 			registerBtn.setText(R.string.register);
 			registerBtn.setEnabled(true);
 			break;
-
 		default:
 			break;
 		}
@@ -93,14 +89,12 @@ public class RegisterActivity extends FindInitActivity implements
 					Toast.LENGTH_SHORT).show();
 			return;
 		}
-
 		if (TextUtils.isEmpty(mail)) {
 			Toast.makeText(getApplicationContext(),
 					getResources().getString(R.string.register_usermail_hint),
 					Toast.LENGTH_SHORT).show();
 			return;
 		}
-
 		if (TextUtils.isEmpty(pwd)) {
 			Toast.makeText(getApplicationContext(),
 					getResources().getString(R.string.login_password_hint),
@@ -144,7 +138,7 @@ public class RegisterActivity extends FindInitActivity implements
 					Toast.LENGTH_SHORT).show();
 			return;
 		}
-
+		
 		registerBtn.setText(R.string.register_in);
 		registerBtn.setEnabled(false);
 		registerVolley.addParams("userName", uname);

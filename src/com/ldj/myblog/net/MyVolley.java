@@ -69,6 +69,28 @@ public class MyVolley implements Response.ErrorListener, Listener<JSONObject> {
 		myQueue.add(jsonObjectRequest);
 
 	}
+	
+	public void requestGet(String url, Handler handler,final String accessToken) {
+		this.handler = handler;
+		JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(url
+				+ Map2KV.map(params), null, this, this) {
+			@Override
+			public Map<String, String> getHeaders() throws AuthFailureError {
+				Map<String, String> headers = new HashMap<String, String>();
+				headers.put("Accept", "application/json");
+				headers.put("Content-Type", "application/json; charset=utf-8");
+				headers.put("accessToken", accessToken);
+				return headers;
+			}
+
+		};
+		jsonObjectRequest.setRetryPolicy(new DefaultRetryPolicy(10 * 1000,
+				DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+				DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
+
+		myQueue.add(jsonObjectRequest);
+
+	}
 
 	// public void requestGet(String url, LoadingDialog dialog, Handler handler)
 	// {
@@ -81,6 +103,8 @@ public class MyVolley implements Response.ErrorListener, Listener<JSONObject> {
 	public void requestPost(String url, Handler handler) {
 		this.handler = handler;
 		JSONObject jsonObject = new JSONObject(params);
+		
+		
 
 		JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(
 				Method.POST, url, jsonObject, this, this) {

@@ -3,7 +3,10 @@ package com.ldj.myblog.fragment;
 import java.util.List;
 
 import android.app.Activity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.Message;
 import android.support.annotation.Nullable;
@@ -42,12 +45,11 @@ public class HomeBlogListFragment extends BaseFragment implements
 	MyVolley allVolley;
 	MyVolley moreBlogVolley;
 	private static final int REQUEST_DETAIL = 1;
+	
+	
 
 	@Override
 	protected void initFragmentDatas() {
-		// blogs = new ArrayList<Blog>();
-		// blogs.add(new Blog("1937年10月10日，时任国名党53军691团团长的吕征", "10", "18分钟前",
-		// "凤凰卫视", "20"));
 		blogAdapter = new HomeBlogAdapter(getActivity());
 		allVolley = new MyVolley(getActivity(), Const.Message.MSG_ALL_SUCC,
 				Const.Message.MSG_ALL_FAIL);
@@ -167,7 +169,7 @@ public class HomeBlogListFragment extends BaseFragment implements
 	}
 
 	@Override
-	public void onRefresh() {
+	public  void onRefresh() {
 		allVolley.addParams("page", 1);
 		allVolley.requestGet(Const.Request.all, getHandler());
 		refreshBtn.setVisibility(View.INVISIBLE);

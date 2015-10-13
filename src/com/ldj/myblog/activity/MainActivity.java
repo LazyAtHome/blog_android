@@ -36,9 +36,11 @@ public class MainActivity extends FindInitActivity implements OnClickListener {
 		
 		@Override
 		public void onReceive(Context context, Intent intent) {
-			homeTabImage.performClick();
 			if(homeFragment != null && homeFragment.isAdded()){
 				homeFragment.onRefresh();
+			}
+			if(intent.getBooleanExtra("clicked", false)){
+				homeTabImage.performClick();
 			}
 		}
 	};

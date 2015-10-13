@@ -31,12 +31,13 @@ public class Const {
 //        public static final String SERVER =
 //                "http://192.168.1.101:8888/blogserver";
 		 public static final String SERVER =
-		 "http://192.168.1.159:8080/blogserver";
+		 "http://192.168.1.169:8080/blogserver";
         public static final String login = SERVER + "/users/login";
         public static final String reg = SERVER + "/users/reg";
         public static final String publish = SERVER + "/posts";
         public static final String all = SERVER + "/posts/all";
         public static final String delete = SERVER + "/posts";
+        public static final String my = SERVER + "/posts/my";
         
 
     }
